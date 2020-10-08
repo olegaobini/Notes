@@ -1,0 +1,239 @@
+#+title: Notes
+#+author: Olega Obini
+#+email: obiniolega@gmail.com
+
+* Docker
+
+  *Container*
+  /a linux container contain applications in a way to keep them isoloated from the host system that they run on./
+  /Containers allow developers to package up an application with all of th eparts it needs, such as libraries/
+  /and other dependencies. And ship it all out as one package./
+  
+  - *Host System*
+    the host operating system is software on a computer that works with the underlying hardware
+   
+  - *image*
+    an image is the "dvd" (i.e. file) that you "burn" a program onto (i.e. a class). 
+
+  - *container*
+    a container is what the docker image turns into once it's running in Docker (i.e. a  single class instance).
+    
+  - *Registry*
+    a Repository for Docker images. [[https://hub.docker.com][Docker Hub]]
+
+  - *Dockerfile*
+    Text Document with commands necessary to create a Docker image. 
+
+  - *Tag*
+    A Tag allows you to add a uniqe identifier to an image name.
+    
+  - *Build*
+    Initiating the commands of a Dockerfile in order to create a Docker image.
+    
+
+** TODO
+* Emacs
+** Shortcuts
+   =C-<RET>= : create new element
+   =,-s n= : focus on selected sub tree  
+   =,-s N= : stop focus
+   =SPC-w c c= : toggle centered display and full screen
+   =SPC j i= : jump to headings in a org buffer
+* Programming
+** Java                                                                :java:
+*** Hello World
+
+    #+BEGIN_SRC java
+      package com.company;
+
+      public class Main {
+          public static void main(String[] args) {
+              // write your code here
+              System.out.pritnln("Hello World");
+          }
+      } 
+    #+END_SRC
+
+#+BEGIN_SRC java
+      public class Main {}
+#+END_SRC
+declaration of the *Main* class
+
+#+BEGIN_SRC java
+      public static void main(String[] args)
+#+END_SRC
+Declaration of the *main* method.
+
+    - *public* denotes this method is accessible to all files
+    - *static* denotes this method is static
+    - *void* denotes this method won't return any value
+    - CompTIA A+
+* CompTIA A+
+** core 1 (220-1001)
+
+   |--------------------------------------+------------------|
+   | Area of Study                        | % of examination |
+   |--------------------------------------+------------------|
+   | HARDWARE AND NETWORK TROUBLESHOOTING |              27% |
+   | NETWORKING                           |              20% |
+   | VIRTUALIZATION AND CLOUD COMPUTING   |              12% |
+   | MOBILE DEVICES                       |              14% |
+   | HARDWARE                             |              27% |
+   |--------------------------------------+------------------|
+
+*** Dashboard [0%]
+
+        - MOBILE DEVICE - Corporate and ISP email configuration 
+          - [X] POP3
+            - Post Office Protocol v3
+            - a protocol for receiving email by downloading it to your computer from a mailbox on the server of an Internet service provider.
+            - POP3 downloads the email from a server to a single computer, then deletes the email from the server.
+            - Only use if all emails are required offline
+
+          - [X] IMAP
+            - Simply put, IMAP (Internet Access Message Protocol) is an email protocol that deals with managing and retrieving email messages from the receiving server.
+            - Can't use IMAP to send emails.
+            https://www.socketlabs.com/wp-content/uploads/2019/05/SMTP-IMAP-1.png 
+
+          - [ ] PORT and SSL Settings
+            - *Secure Socket Layer* (SSL) is responsible for data authentication and encryption
+
+          - [-] S/MIME
+            - Secure/Multipurpose Internet Mail Extensions
+    
+          - [ ] SMTP
+
+        - NETWORKING - Ports and Protocols
+
+          - [ ] FTP
+            - the standard protocol for transferring files over a TCP/IP network. ex.(ftp.example.com)
+            - can configure standalone or personal computer as FTP server
+            - Can use FTP with internet browser or FTP client
+
+          - [ ] SSH
+
+          - [ ] Telnet
+
+          - [ ] DNS
+
+          - [ ] HTTP
+
+          - [ ] HTTPS
+
+          - [ ] POP3
+
+          - [ ] Imap
+
+        - NETWORKING - NETWORKING HARDWARE DEVICES
+          - [ ] Routers
+
+          - [ ] Switches
+            - [ ] Managed
+            - [ ] Unmanaged
+
+          - [ ] Access Points
+
+          - [ ] Cloud-Based Network Controller
+
+          - [ ] Firewall
+
+          - [ ] Bridge
+
+          - [ ] Cable/DSL MODEM
+            
+        - HARDWARE CONFIGURATION 
+          - [X] Optical Drives
+            - CD-ROM/CD-RW
+            - DVD-ROM/DVD
+            - RW/DVD
+            - RW DL
+            - Blu-ray
+            - BD-R
+            - BD-RE
+        
+*** Networking                                                      :network:
+**** WPA I, II, III                                          :wpa:encryption:
+     
+     [[https://en.wikipedia.org/wiki/Wi-Fi_Protected_Access#WPA][WI-FI Protected Access]] (WPA), (WPA2), and (WPA3) are three security and security certification
+     programs developed to secure wireless computer networks.
+     
+     - *WPA*: A security certification program that is implemented in the firmware of [[https://en.wikipedia.org/wiki/Wireless_network_interface_card][wireless network interface cards]]
+     - *WPA2*: In 2004, WPA2 replaced WPA. it includes mandatory support for CCMP, an AES-based encryption mode
+     - *WPA3*: A Replacement to WPA2 which uses the new standard uses an equivalent 192-bit cryptographic strength in WPA3-Enterprise mode
+
+**** Universal Plug and Play (UPnP)
+    
+     *Universal Plug and Play* /(UPnP) is a set of networking protocols that permits networked devices, such as personal computers, printers,/
+     /Internet gateways, WI-FI access points and mobile devices to seamlessly discover each other's presence on the network and establish/
+     /functional network services for data sharing, communications, and entertainment. UPnP is intended primarily for residential networks/
+     /without enterprise-class devices./ [[https://en.wikipedia.org/wiki/Universal_Plug_and_Play#:~:text=Universal%20Plug%20and%20Play%20(UPnP,network%20services%20for%20data%20sharing%2C][Universal Plug and Play - Wikipedia ]]   
+     
+     - VERY BAD DON"T USE THIS
+
+*** Hardware                                                       :hardware:
+**** PCIe                                                              :PCIe:
+     
+     *PCIe* (peripheral component interconnect express) is an interface standard for connecting high-speed components. [[https://www.tomshardware.com/reviews/pcie-definition,5754.html][What Is PCIe? | Tom's Hardware]] 
+     
+     *Can Be used to connect*
+     - Personal Graphics Cards
+     - RAID Cards
+     - WI-FI Cards
+     - SSD add on cards
+
+     PCIe slots can come in different configurations. x1, x4, x8, x16, x32.
+     these are how many lanes the PCIe slots have.
+
+     A PCIe x2 slot has two lanes and can move data at two bits per cycle (and so on).
+     [[https://cdn.mos.cms.futurecdn.net/jE2uu97dY2H6JC7jGqjTFT-970-80.jpg]] 
+
+*** Hardware and Network Troubleshooting
+**** Blue Screen of Death (BSOD)                    :windows:troubleshooting:
+     
+     [[https://www.howtogeek.com/163452/everything-you-need-to-know-about-the-blue-screen-of-death/][The Blue Screen of Death]] (BSOD) is always an unwelcome sight. BSODs appear when Microsoft Windows encounters a critical error from which it can’t
+     recover, usually the result of low-level software (or drivers) crashing or faulty hardware.
+
+     Blue screens are generally caused by problems with your computer’s hardware or issues with its hardware driver software.
+
+     When a blue screen occurs, Windows automatically creates a “minidump” file that contains information about the crash and saves it to your disk. 
+     
+***** Troubleshooting
+      
+**** Netstat                                                        :windows:
+    
+     delivers basic statistics on all network activities and informs users on which ports and addresses the corresponding connections (TCP, UDP) are running
+     and which ports are open for tasks.
+
+** core 2 (220-1001)
+*** Dashboard
+**** Operating Systems[0/7]
+     - [ ] compare 64-bit to 32-bit
+     - [ ] compare Windows, MacOS, Linux
+     - [ ] compare mobile phone OSs
+     - [ ] compatibility concerns?
+     - [ ] compare and contrast versions of MS Windows versions [0/4]
+       - [ ] Windows 7
+       - [ ] Windows 8
+       - [ ] Windows 8.1
+       - [ ] Windows 10
+     - [ ] Compare Windows Features
+       - [ ] Domain Access
+       - [ ] Bitlocker
+       - [ ] Media Center
+       - [ ] BranchCache
+       - [ ] EFS
+     - [ ] Summarize general OS installation considerations and upgrade methods
+
+** core 2 (220-1001)
+
+* CPTC
+** College Success 102
+*** Tutoring Center - Dr.Dave
+    - available from 9:00am to 4:30pm
+    - lots of help for math if needed
+    - not as much for english
+    - contact information: tutoringcenter@cptc.edu | 253-589-559
+    - virtual hours: monday-friday: 9:00 am - 4:30 pm
+**** TODO [50%]
+    - [X] get accurate time for operating hours
+    - [ ] firm instructions to how to access the tutoring center from the website
